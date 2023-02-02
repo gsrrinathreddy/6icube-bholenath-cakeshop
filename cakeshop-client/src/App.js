@@ -51,7 +51,7 @@ function ResponsiveAppBar() {
               fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: 'skyblue',
+              color: 'inherit',
               textDecoration: 'none',
             }}
           >
@@ -65,7 +65,7 @@ function ResponsiveAppBar() {
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
-              color="skyblue"
+              color="inherit"
             >
               <MenuIcon />
             </IconButton>
@@ -107,7 +107,7 @@ function ResponsiveAppBar() {
               fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: 'skyblue',
+              color: 'inherit',
               textDecoration: 'none',
             }}
           >
