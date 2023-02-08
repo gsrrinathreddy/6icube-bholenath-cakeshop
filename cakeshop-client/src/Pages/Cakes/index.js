@@ -1,9 +1,7 @@
+import { Counter } from "../../Features/Counter/Counter"
+
 export default function Cakes(){
     return(
-      <>
-      
-      This is Cake Page.
-      
-      </>
+<Counter />
     )
   }

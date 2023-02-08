@@ -1,3 +1,5 @@
+import React from 'react';
+import './App.css';
 import Navbar from './Components/Navbar/Navbar'
 import Cakes from './Pages/Cakes';
 import Fruits from './Pages/Fruits';
@@ -6,15 +8,16 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
 function App() {
   return (
+    <div>
     <BrowserRouter>
-    <Navbar/>
+    <Navbar/>    
     <Routes>
       <Route path="/cakes" element={<Cakes/>}/>
       <Route path="/icecreams" element={<Icecreams/>}/>
       <Route path="/fruits" element={<Fruits/>}/>
-      
     </Routes>
     </BrowserRouter>
+    </div>    
   );
 }
 
