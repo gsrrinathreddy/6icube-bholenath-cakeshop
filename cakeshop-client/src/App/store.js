@@ -1,8 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit'
-import counterReducer from '../Features/Counter/counterSlice'
+import logger from 'redux-logger'
+import cakeReducer from '../Features/Cakes/cakeSlice'
 
-export default configureStore({
-  reducer: {
-    counter: counterReducer,
-  },
+const store=configureStore({
+    reducer:{
+        cake:cakeReducer
+    },
+    middleware:getDafaultMiddleware=>getDafaultMiddleware().concat(logger)
 })
+export default store;
